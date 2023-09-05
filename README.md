@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Portfolio Website on Azure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+A personal portfolio website showcasing projects and skills, built using React and deployed on Azure using Docker and Kubernetes.
 
-## Available Scripts
+## Features
+- Interactive UI with a responsive design.
+- Dynamic content loading.
+- Integration with Azure services for scalability and reliability.
 
-In the project directory, you can run:
+## Getting Started with Docker and Docker Compose
 
-### `npm start`
+### Prerequisites
+- Install Docker and Docker Compose.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Steps to Run the Application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/portfolio-website.git
+    ```
 
-### `npm test`
+2. Navigate to the project directory:
+    ```bash
+    cd portfolio-website
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Run the application using Docker Compose:
+    ```bash
+    docker-compose up -d
+    ```
 
-### `npm run build`
+4. Access the application by navigating to `http://localhost:3000` in your browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technical Choices
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Framework**: Chose React for its component-based architecture, which allows for reusable components and a more organized codebase.
+- **Styling**: TailwindCSS, a utility-first CSS framework, has been used for styling the components, ensuring a responsive and modern design.
+- **Icons**: react-icons library is utilized for scalable vector icons.
+- **Animations**: The website features animations achieved using the framer-motion library.
+- **Tools and Libraries**: Used Docker for containerization, ensuring that the application runs consistently across different environments. Docker Compose was used for defining and running the application stack.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Azure Implementation
 
-### `npm run eject`
+### Scalability and Cost Management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Azure Kubernetes Service (AKS)**: Chose AKS for its managed Kubernetes capabilities. It allows for easy scaling of applications, managing and monitoring containerized applications.
+  
+- **Azure Container Registry (ACR)**: Used ACR to store and manage Docker container images. Integrated ACR with AKS for seamless deployments.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Azure Services Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Azure Kubernetes Service (AKS)
+- Azure Container Registry (ACR)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Reliability and Availability
 
-## Learn More
+Chose the standard tier for AKS which provides 99.95% uptime. This ensures that the application remains robust and available to users. Additionally, periodic backups and health checks are implemented for added reliability.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
