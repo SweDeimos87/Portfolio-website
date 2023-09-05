@@ -17,7 +17,7 @@ A personal portfolio website showcasing projects and skills, built using React a
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/portfolio-website.git
+    git clone https://github.com/SweDeimos87/portfolio-website.git
     ```
 
 2. Navigate to the project directory:
