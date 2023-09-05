@@ -25,4 +25,5 @@ COPY --from=build /usr/src/app/build ./build
 COPY ./public ./public
 COPY package.json .
 EXPOSE 3000
-CMD npm start
+CMD npm run prod
+

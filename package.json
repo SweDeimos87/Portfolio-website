@@ -6,23 +6,25 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
-    "react-type-animation": "^2.1.2",
-    "web-vitals": "^2.1.4",
-    "react-icons": "^4.10.1",
     "framer-motion": "^8.5.5",
+    "react": "^18.2.0",
     "react-countup": "^6.4.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
     "react-intersection-observer": "^9.4.1",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
-    "tailwindcss": "^3.3.3"
+    "react-type-animation": "^2.1.2",
+    "serve": "^14.2.1",
+    "tailwindcss": "^3.3.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prod": "serve -s build -l 3000"
   },
   "eslintConfig": {
     "extends": [
@@ -41,9 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    
-    
   }
 }
