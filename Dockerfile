@@ -13,6 +13,7 @@ RUN npm ci --omit=dev
 # Build stage
 FROM deps as build
 COPY . .
+COPY ./src /usr/src/app/src
 RUN npm run build
 
 # Final stage
